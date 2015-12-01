@@ -59,3 +59,46 @@ a img {
 /* line 116, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block; }
+
+/* line 8, sass/style.scss */
+html, body {
+  overflow-x: hidden; }
+
+/* line 10, sass/style.scss */
+body {
+  font-family: "Parisienne", cursive; }
+
+/* line 1, sass/modules/_slideshow.scss */
+.slideshow {
+  display: block;
+  height: 100vh;
+  pointer-events: none;
+  position: relative;
+  width: 100vw;
+  z-index: 10; }
+  /* line 8, sass/modules/_slideshow.scss */
+  .slideshow .slide {
+    display: block;
+    height: 100vh;
+    pointer-events: none;
+    width: 100vw; }
+  /* line 14, sass/modules/_slideshow.scss */
+  .slideshow + h1 {
+    color: white;
+    font-size: 3rem;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+    z-index: 999;
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-shadow: 1px 1px 0 black, -1px 1px 0 black, 1px -1px 0 black, -1px -1px 0 black; }
+
+/* line 28, sass/modules/_slideshow.scss */
+.admin-bar .slideshow {
+  height: calc(100vh - 32px); }
