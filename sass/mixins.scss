@@ -1,0 +1,13 @@
+@mixin transform($transform) {
+    -moz-transform: $transform;
+    -ms-transform: $transform;
+    -o-transform: $transform;
+    -webkit-transform: $transform;
+    transform: $transform;
+}
+@mixin text_stroke($color) {
+    text-shadow: 1px 1px 0 $color,
+                -1px 1px 0 $color,
+                1px -1px 0 $color,
+                -1px -1px 0 $color;
+}
