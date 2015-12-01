@@ -1,0 +1,28 @@
+.slideshow {
+    display: block;
+    height: 100vh;
+    pointer-events: none;
+    position: relative;
+    width: 100vw;
+    z-index: 10;
+    .slide {
+        display: block;
+        height: 100vh;
+        pointer-events: none;
+        width: 100vw;
+    }
+    & + h1 {
+        color: white;
+        font-size: 3rem;
+        left: 0;
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        width: 100%;
+        z-index: 999;
+        @include transform(translate(0, -50%));
+        @include text_stroke(black);
+    }
+}
+
+.admin-bar .slideshow { height: calc(100vh - 32px); }
