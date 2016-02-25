@@ -7,4 +7,5 @@
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-  <?php global $template; echo "\n<!--$template-->\n"; ?>
+	<?php global $template; echo "\n<!--$template-->\n"; ?>
+
