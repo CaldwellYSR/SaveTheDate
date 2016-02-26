@@ -1,5 +1,6 @@
 @import "vars";
 @import "mixins";
+@import "placeholders";
 @import "theme_info";
 
 @import "compass";
@@ -8,9 +9,21 @@
 html, body { overflow-x: hidden; }
 
 body {
-	background: image-url('crossword.png') repeat;
+	background: image-url('xv.png') repeat;
+    color: $primary_color;
     font-family: $font_family;
 }
 
+hr {
+    padding: 0;
+    border: none;
+    border-top: medium double $primary_color;
+    color: $primary_color;
+    max-height: 0;
+    margin: 3rem 0;
+    text-align: center;
+}
+
 @import "modules/slideshow";
-//@import "modules/rsvp";
+@import "modules/home_content";
+@import "modules/rsvp";

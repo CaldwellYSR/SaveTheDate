@@ -1,24 +1,26 @@
 .slideshow_container {
-	margin: 0 auto;
-	width: 70%;
+    margin-top: 2rem;
+    @extend %wrapper;
 }
-.slideshow_header {
+.slideshow_header, .slideshow_footer {
 	color: $primary_color;
 	font-size: 2.5rem;
 	text-align: center;
 	small {
 		display: block;
+        margin: 0.5rem 0 1.5rem;
 	}
 }
 .slideshow {
-	border: 7px solid white;
+	border: 10px solid #4a4d56;
 	margin: 0.5rem 0;
-	min-height: 450px;
+	min-height: 40vw;
 }
 .slide {
-	width: 100%;
+	width: 80vw;
 	img {
 		display: block;
+        height: auto;
 		width: 100%;
 	}
 }
