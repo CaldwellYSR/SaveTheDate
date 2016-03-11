@@ -29,7 +29,16 @@
 		<h2>November 12th, 2016 <small><?php echo $days_remaining.' Days Remaining'; ?></small></h2>
     </footer>
     <article class='home_content'>
-    <?php while(have_posts()) : the_post(); ?>
+    <?php 
+        $home_page_args = array(
+            'category_name' => 'home',
+            'order' => 'ASC'
+        ); 
+        $home = new WP_Query($home_page_args);
+    ?>
+    <?php while($home->have_posts()) : $home->the_post(); ?>
+        <h2><?php the_title(); ?></h2>
+        <hr />
         <?php the_content(); ?>
     <?php endwhile; ?>
     </article>

@@ -120,11 +120,17 @@ hr {
   /* line 3, sass/modules/_home_content.scss */
   .home_content p {
     font-size: 1.15rem;
-    line-height: 1.25rem; }
+    line-height: 1.5rem; }
   /* line 7, sass/modules/_home_content.scss */
   .home_content h2 {
     font-size: 2.5rem;
     margin: 2.5rem 0 0; }
+  /* line 11, sass/modules/_home_content.scss */
+  .home_content em {
+    font-style: italic; }
+  /* line 14, sass/modules/_home_content.scss */
+  .home_content strong {
+    font-weight: bold; }
 
 /* line 1, sass/modules/_rsvp.scss */
 .rsvp {
