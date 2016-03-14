@@ -45,38 +45,7 @@
     <section id='rsvp' class='rsvp'>
         <h2>Save The Date</h2>
         <hr />
-        <form class='wrapper' action='' method='post'>
-            <label class='half' for='ceremony'>
-                <input type='checkbox' name='ceremony' value='1' />
-                I will attend the ceremony
-            </label>
-            <label class='half' for='reception'>
-                <input type='checkbox' name='reception' value='1' />
-                I will attend the reception
-            </label>
-            <label for='name'>
-                <input type='text' name='name' value='' />
-                Name
-            </label>
-            <label for='phone_number'>
-                <input type='tel' name='phone_number' value='' />
-                Phone Number
-            </label>
-            <label for='address'>
-                <input type='text' name='address' value='' />
-                Address
-            </label>
-            <label for='plus_one'>
-                <input type='checkbox' name='plus_one' value='1' />
-                Plus One
-            </label>
-            <label for='name'>
-                <input type='text' name='name' value='' />
-                Name
-            </label>
-            <label for='comments'>Other Comments: (food allergies, small children, etc)</label>
-            <textarea name='comments' resize></textarea>
-        </form>
+        <?php gravity_form(1, false, false); ?>
     </section>
 </main>
 <?php get_footer(); ?>

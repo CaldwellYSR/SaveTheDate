@@ -2,40 +2,32 @@
     padding: 2rem 0;
     text-align: center;
     h2 {
-        font-size: 2.5rem;
+        font-family: $header_font;
+        font-size: 3.5rem;
+        font-weight: 400;
+        margin: 2rem 0 0;
     }
-    .wrapper {
+    .gform_wrapper {
         display: block;
         margin: 1rem auto;
-        max-width: 1280px;
-        text-align: justify;
-        &:after {
-          content: '';
-          display: inline-block;
-          width: 100%;
-        }
+        width: 50%;
     }
-    label {
-        display: inline-block;
-        margin-top: 2rem;
-        text-align: center;
-        width: 30%;
-        input {
-          display: block;
-          margin: 0 auto 5px;
-        }
+    .gform_wrapper .top_label .gfield_label {
+        font-family: $header_font;
+        font-size: 2rem;
+        font-weight: 400;
+        margin: 1rem 0 0;
     }
-    label.half {
-        margin-top: 0;
-        width: 45%;
-    }
-    label[for='comments'],
-    textarea {
-        display: block;
-        margin: 5px auto;
-        width: 80%;
-    }
-    textarea {
-        height: 275px;
+    .button {
+        -webkit-appearance: none;
+        background: $primary_color;
+        border: 0;
+        border-radius: 18rem;
+        color: white;
+        font-family: $header_font;
+        font-size: 2rem !important;
+        font-weight: 400;
+        margin: 0;
+        padding: 0.25rem 2rem;
     }
 }

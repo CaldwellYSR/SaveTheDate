@@ -67,23 +67,32 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* line 9, sass/style.scss */
 html, body {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  font-size: 14px; }
 
-/* line 11, sass/style.scss */
+/* line 13, sass/style.scss */
+p {
+  font-size: 14px; }
+
+/* line 17, sass/style.scss */
 body {
   background: url('images/xv.png?1456504524') repeat;
   color: #26328c;
-  font-family: "Playfair Display", serif; }
+  font-family: "Playfair Display", serif;
+  font-size: 14px;
+  font-weight: 400; }
 
-/* line 17, sass/style.scss */
+/* line 25, sass/style.scss */
 hr {
-  padding: 0;
+  background: url('images/divider1.png?1457731659') no-repeat center center/cover;
   border: none;
-  border-top: medium double #26328c;
-  color: #26328c;
-  max-height: 0;
-  margin: 3rem 0;
-  text-align: center; }
+  display: block;
+  height: 54px;
+  margin: 1rem auto 2rem auto;
+  max-width: 100%;
+  padding: 0;
+  text-align: center;
+  width: 700px; }
 
 /* line 1, sass/modules/_slideshow.scss */
 .slideshow_container {
@@ -92,45 +101,78 @@ hr {
 /* line 5, sass/modules/_slideshow.scss */
 .slideshow_header, .slideshow_footer {
   color: #26328c;
-  font-size: 2.5rem;
+  font-family: "Bilbo Swash Caps", cursive;
+  font-size: 3.5rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
   text-align: center; }
-  /* line 9, sass/modules/_slideshow.scss */
+  /* line 12, sass/modules/_slideshow.scss */
   .slideshow_header small, .slideshow_footer small {
     display: block;
     margin: 0.5rem 0 1.5rem; }
 
-/* line 14, sass/modules/_slideshow.scss */
+/* line 17, sass/modules/_slideshow.scss */
+.slideshow_footer {
+  font-size: 1.75rem;
+  text-transform: normal; }
+
+/* line 21, sass/modules/_slideshow.scss */
 .slideshow {
-  border: 10px solid #4a4d56;
+  border: 10px solid #aaa;
   margin: 0.5rem 0;
   min-height: 40vw; }
 
-/* line 19, sass/modules/_slideshow.scss */
+/* line 26, sass/modules/_slideshow.scss */
 .slide {
   width: 80vw; }
-  /* line 21, sass/modules/_slideshow.scss */
+  /* line 28, sass/modules/_slideshow.scss */
   .slide img {
     display: block;
     height: auto;
     width: 100%; }
 
+/* line 1, sass/modules/_nav.scss */
+.menu {
+  background: white;
+  box-shadow: 0 2px 15px #ccc;
+  padding: 1.5rem 0;
+  text-align: center;
+  width: 100%; }
+  /* line 7, sass/modules/_nav.scss */
+  .menu li {
+    display: inline-block;
+    vertical-align: middle; }
+  /* line 11, sass/modules/_nav.scss */
+  .menu a {
+    color: #26328c;
+    font-size: 1.25rem;
+    padding: 0 2rem;
+    text-decoration: none;
+    text-transform: uppercase; }
+
 /* line 1, sass/modules/_home_content.scss */
 .home_content {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
   text-align: center; }
-  /* line 3, sass/modules/_home_content.scss */
+  /* line 5, sass/modules/_home_content.scss */
   .home_content p {
+    font-family: "Playfair Display", serif;
     font-size: 1.15rem;
+    font-weight: 400;
     line-height: 1.5rem; }
-  /* line 7, sass/modules/_home_content.scss */
-  .home_content h2 {
-    font-size: 2.5rem;
-    margin: 2.5rem 0 0; }
   /* line 11, sass/modules/_home_content.scss */
+  .home_content h2 {
+    font-family: "Bilbo Swash Caps", cursive;
+    font-size: 3.5rem;
+    font-weight: 400;
+    margin: 4.5rem 0 0; }
+  /* line 17, sass/modules/_home_content.scss */
   .home_content em {
     font-style: italic; }
-  /* line 14, sass/modules/_home_content.scss */
+  /* line 20, sass/modules/_home_content.scss */
   .home_content strong {
-    font-weight: bold; }
+    font-weight: 700; }
 
 /* line 1, sass/modules/_rsvp.scss */
 .rsvp {
@@ -138,38 +180,30 @@ hr {
   text-align: center; }
   /* line 4, sass/modules/_rsvp.scss */
   .rsvp h2 {
-    font-size: 2.5rem; }
-  /* line 7, sass/modules/_rsvp.scss */
-  .rsvp .wrapper {
+    font-family: "Bilbo Swash Caps", cursive;
+    font-size: 3.5rem;
+    font-weight: 400;
+    margin: 2rem 0 0; }
+  /* line 10, sass/modules/_rsvp.scss */
+  .rsvp .gform_wrapper {
     display: block;
     margin: 1rem auto;
-    max-width: 1280px;
-    text-align: justify; }
-    /* line 12, sass/modules/_rsvp.scss */
-    .rsvp .wrapper:after {
-      content: '';
-      display: inline-block;
-      width: 100%; }
-  /* line 18, sass/modules/_rsvp.scss */
-  .rsvp label {
-    display: inline-block;
-    margin-top: 2rem;
-    text-align: center;
-    width: 30%; }
-    /* line 23, sass/modules/_rsvp.scss */
-    .rsvp label input {
-      display: block;
-      margin: 0 auto 5px; }
-  /* line 28, sass/modules/_rsvp.scss */
-  .rsvp label.half {
-    margin-top: 0;
-    width: 45%; }
-  /* line 32, sass/modules/_rsvp.scss */
-  .rsvp label[for='comments'],
-  .rsvp textarea {
-    display: block;
-    margin: 5px auto;
-    width: 80%; }
-  /* line 38, sass/modules/_rsvp.scss */
-  .rsvp textarea {
-    height: 275px; }
+    width: 50%; }
+  /* line 15, sass/modules/_rsvp.scss */
+  .rsvp .gform_wrapper .top_label .gfield_label {
+    font-family: "Bilbo Swash Caps", cursive;
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 1rem 0 0; }
+  /* line 21, sass/modules/_rsvp.scss */
+  .rsvp .button {
+    -webkit-appearance: none;
+    background: #26328c;
+    border: 0;
+    border-radius: 18rem;
+    color: white;
+    font-family: "Bilbo Swash Caps", cursive;
+    font-size: 2rem !important;
+    font-weight: 400;
+    margin: 0;
+    padding: 0.25rem 2rem; }

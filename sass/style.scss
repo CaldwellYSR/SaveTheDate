@@ -6,24 +6,35 @@
 @import "compass";
 @import "compass/reset";
 
-html, body { overflow-x: hidden; }
+html, body { 
+    overflow-x: hidden; 
+    font-size: 14px;
+}
+p {
+    font-size: 14px;
+}
 
 body {
 	background: image-url('xv.png') repeat;
     color: $primary_color;
     font-family: $font_family;
+    font-size: 14px;
+    font-weight: 400;
 }
 
 hr {
-    padding: 0;
+    background: image-url('divider1.png') no-repeat center center / cover;
     border: none;
-    border-top: medium double $primary_color;
-    color: $primary_color;
-    max-height: 0;
-    margin: 3rem 0;
+    display: block;
+    height: 54px;
+    margin: 1rem auto 2rem auto;
+    max-width: 100%;
+    padding: 0;
     text-align: center;
+    width: 700px;
 }
 
 @import "modules/slideshow";
+@import "modules/nav";
 @import "modules/home_content";
 @import "modules/rsvp";
